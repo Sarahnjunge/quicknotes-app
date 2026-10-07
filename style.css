@@ -1,0 +1,166 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* Header */
+header {
+  background-color: #8e0000;
+  color: white;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin-bottom: 0;
+}
+
+/* Main area */
+main {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+/* Section cards */
+section {
+  background-color: white;
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Form */
+#note-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#note-form label {
+  font-weight: bold;
+}
+
+#note-input {
+  flex: 1;
+  min-width: 200px;
+}
+
+#note-category {
+  padding: 10px;
+}
+
+#note-input,
+#search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+#search-input {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0ba184;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #087f68;
+}
+
+/* Error message */
+#error-message {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+/* Notes list */
+#notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Note cards */
+.note {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-left: 5px solid #999;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background-color: #fafafa;
+}
+
+.note p {
+  margin: 6px 0;
+}
+
+.note-category {
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.note-date {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Category styles */
+.category-personal {
+  border-left-color: #0ba184;
+}
+
+.category-work {
+  border-left-color: #8e0000;
+}
+
+.category-study {
+  border-left-color: #2563eb;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  #note-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #note-form label,
+  #note-input,
+  #note-category,
+  #note-form button {
+    width: 100%;
+  }
+}
