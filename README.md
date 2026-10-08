@@ -9,7 +9,7 @@ FEATURES
 * Create notes
 * Choose a category: Personal, Work, or Study
 * Validate note input
-* Delete individual notes
+* Delete individual notes 
 * Search notes as you type
 * Case-insensitive search
 * Save notes with localStorage
